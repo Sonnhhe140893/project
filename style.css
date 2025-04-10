@@ -1,0 +1,12 @@
+.hero {
+    background-color: #fff;
+  }
+  .hero .col-lg-8 {
+    background-color: #fef2e8; 
+    overflow: hidden;
+    position: relative;
+  }
+  .hero img {
+    max-height: 100%;
+    object-fit: contain;
+  }
