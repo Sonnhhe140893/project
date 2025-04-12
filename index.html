@@ -2,222 +2,547 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Fashion Landing Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <meta charset="UTF-8">
+  <title>FIERCÉ - Fashion Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="bg-light py-1 small border-bottom">
-        <div class="container d-flex justify-content-between align-items-center">
-          <span>Free shipping on all orders above <strong>$250</strong></span>
-          <div class="d-flex align-items-center gap-3">
-            <div class="dropdown">
-              <a href="#" class="text-decoration-none text-dark dropdown-toggle" data-bs-toggle="dropdown">ENG</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">ENG</a></li>
-                <li><a class="dropdown-item" href="#">FR</a></li>
-              </ul>
-            </div>
-            <div class="dropdown">
-              <a href="#" class="text-decoration-none text-dark dropdown-toggle" data-bs-toggle="dropdown">USD</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">USD</a></li>
-                <li><a class="dropdown-item" href="#">EUR</a></li>
-              </ul>
-            </div>
-            <span>Follow us</span>
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
+  <!-- Top Bar -->
+  <div class="top-bar py-1 small">
+    <div class="container d-flex justify-content-between align-items-center">
+      <span>Free shipping on all orders above <strong>$250</strong></span>
+      <div class="d-flex align-items-center gap-3">
+        <div class="dropdown">
+          <a href="#" class="text-decoration-none text-dark dropdown-toggle" data-bs-toggle="dropdown">ENG</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">ENG</a></li>
+            <li><a class="dropdown-item" href="#">FR</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="text-decoration-none text-dark dropdown-toggle" data-bs-toggle="dropdown">USD</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">USD</a></li>
+            <li><a class="dropdown-item" href="#">EUR</a></li>
+          </ul>
+        </div>
+        <span>Follow us</span>
+        <a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white py-3 sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">FIERCÉ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">SHOP</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">All Products</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">NEW & FEATURED</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">MEN'S</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">WOMEN'S</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Dresses</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">COLLECTIONS</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">2025 Summer</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" class="text-dark"><i class="bi bi-search"></i></a>
+          <a href="#" class="text-dark"><i class="bi bi-person"></i></a>
+          <a href="#" class="text-dark"><i class="bi bi-heart"></i></a>
+          <a href="#" class="btn btn-dark position-relative">
+            <i class="bi bi-bag"></i>
+            <span class="ms-2">Cart (16)</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="row">
+      <div class="col-lg-8 ">
+
+        <a href=""><img src="images/Banner_main.png" class="h-100 w-100" alt="Models"></a>
+      </div>
+
+      <div class="col-lg-4 d-flex flex-column gap-2">
+        <a href="">
+          <img src="images/Banner side 1.png" alt="Sunglasses" class="w-100 h-100 object-fit-cover" class="img-fluid">
+        </a>
+        <a href="">
+          <img src="images/Banner side 2.png" alt="Sunglasses" class="w-100 h-100 object-fit-cover" class="img-fluid">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section class="featured-section px-5">
+    <div class="container px-5">
+      <div class="section-title">
+        <p class="small">OUR PRODUCTS</p>
+        <h2>FEATURED PRODUCTS</h2>
+      </div>
+
+      <ul class="nav nav-pills justify-content-center" id="productTabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">BESTSELLER <sup>20</sup></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">TOP ARRIVALS <sup>32</sup></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CHOOSE BY STORE <sup>24</sup></a>
+        </li>
+      </ul>
+
+      <div class="product-grid">
+        <div class="product-item">
+          <span class="badge bg-danger">-8%</span>
+          <img src="images/Image (1).png" alt="Watch">
+          <p class="brand">DIOR</p>
+          <h3 class="title">Fanny watches</h3>
+          <div class="price">
+            <span class="original">$2,865.00</span>
+            <span class="current">$2,115.00</span>
+          </div>
+          <div class="colors">
+            <span class="color-dot" style="background-color: #000"></span>
+            <span class="color-dot" style="background-color: #fff; border: 1px solid #ddd"></span>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <span class="badge bg-danger">-8%</span>
+          <img src="images/Image (2).png" alt="Watch">
+          <p class="brand">DIOR</p>
+          <h3 class="title">Fanny watches</h3>
+          <div class="price">
+            <span class="original">$2,865.00</span>
+            <span class="current">$2,115.00</span>
+          </div>
+          <div class="colors">
+            <span class="color-dot" style="background-color: #000"></span>
+            <span class="color-dot" style="background-color: #fff; border: 1px solid #ddd"></span>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <span class="badge bg-danger">-8%</span>
+          <img src="images/Image (3).png" alt="Watch">
+          <p class="brand">DIOR</p>
+          <h3 class="title">Fanny watches</h3>
+          <div class="price">
+            <span class="original">$2,865.00</span>
+            <span class="current">$2,115.00</span>
+          </div>
+          <div class="colors">
+            <span class="color-dot" style="background-color: #000"></span>
+            <span class="color-dot" style="background-color: #fff; border: 1px solid #ddd"></span>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <span class="badge bg-danger">-8%</span>
+          <img src="images/Image (4).png" alt="Watch">
+          <p class="brand">DIOR</p>
+          <h3 class="title">Fanny watches</h3>
+          <div class="price">
+            <span class="original">$2,865.00</span>
+            <span class="current">$2,115.00</span>
+          </div>
+          <div class="colors">
+            <span class="color-dot" style="background-color: #000"></span>
+            <span class="color-dot" style="background-color: #fff; border: 1px solid #ddd"></span>
           </div>
         </div>
       </div>
-      
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg bg-white py-3 border-bottom">
-        <div class="container">
-          <a class="navbar-brand fw-bold fs-4" href="#">FIERCÉ</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-              <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">SHOP</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">All Products</a></li>
-                </ul>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">NEW & FEATURED</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">MEN'S</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">T-Shirts</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">WOMEN'S</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Dresses</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">COLLECTIONS</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">2025 Summer</a></li>
-                </ul>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
-            </ul>
-            <div class="d-flex align-items-center gap-3">
-              <a href="#"><i class="bi bi-search"></i></a>
-              <a href="#"><i class="bi bi-person"></i></a>
-              <a href="#"><i class="bi bi-heart"></i></a>
-              <a href="#" class="btn btn-dark position-relative">
-                <i class="bi bi-bag"></i>
-                <span class="ms-2">Cart (16)</span>
-              </a>
+    </div>
+  </section>
+
+  <!-- Product Highlight Section -->
+  <section class="product-highlight">
+    <div class="product-highlight-grid">
+      <div class="product-image-large">
+        <img src="images/inner-lining.png.png" alt="Product Large" class="img-fluid">
+      </div>
+      <div class="product-content">
+        <p class="text-uppercase small text-muted">HOT PICK TODAY</p>
+        <h2>The Inner Lining Jacket In Bone And Marine</h2>
+        <p class="text-muted">A military-inspired inner jacket with ribbed wrist hems, side slit pockets and a zip
+          closure. The quilted jacket is designed in a shiny army-green.</p>
+        <div class="price d-flex">
+          <span class="text-muted text-decoration-line-through">$245.00</span>
+          <span class="current-price">$212.50</span>
+        </div>
+        <button class="btn btn-dark">ADD TO CART</button>
+        <div class="navigation-buttons">
+          <button class="btn btn-outline-secondary">&lt;</button>
+          <button class="btn btn-outline-secondary">&gt;</button>
+        </div>
+      </div>
+      <div class="product-image-small">
+        <img src="https://i.ibb.co/6Y2cCGv/watch.png" alt="Product Small" class="img-fluid">
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Story Section -->
+  <section class="p-5">
+    <div class="container px-5">
+      <div class="row align-items-center team-story">
+        <div class="col-md-6">
+          <p class="text-uppercase small text-muted">Our Teams</p>
+          <h1 class="fw-bold mb-3" style="font-size: 75px;">Make Dreams Come True</h1>
+          <p class="text-muted mb-4">VOID public is characterized by adventurous young people, who are aware of the
+            latest trends and are interested in music, social networks and new technologies.</p>
+          <a href="#" class="btn btn-dark">Read More</a>
+        </div>
+        <div class="col-md-6">
+          <img src="images/Video.png" alt="Team Image" class="img-fluid rounded">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Countdown Product Section -->
+  <section class="countdown-product">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="text-uppercase small text-muted">New Collection</p>
+          <h2 class="fw-bold mb-3">FULGHO Nylon Crossbody Bag</h2>
+          <p class="text-muted mb-4">FULGHO bag is a fine demonstration of the label's propensity for structured
+            designs.</p>
+          <div class="mb-4">
+            <span class="text-muted text-decoration-line-through">$359.00</span>
+            <span class="fw-bold ms-2 text-danger">$249.00</span>
+          </div>
+          <div class="d-flex gap-3 mb-4">
+            <div class="text-center">
+              <h3 class="fw-bold mb-0">8</h3>
+              <span class="text-muted small">Days</span>
+            </div>
+            <div class="text-center">
+              <h3 class="fw-bold mb-0">23</h3>
+              <span class="text-muted small">Hrs</span>
+            </div>
+            <div class="text-center">
+              <h3 class="fw-bold mb-0">14</h3>
+              <span class="text-muted small">Mins</span>
+            </div>
+            <div class="text-center">
+              <h3 class="fw-bold mb-0">39</h3>
+              <span class="text-muted small">Secs</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-dark">Order Now</a>
+        </div>
+        <div class="col-md-6">
+          <img src="https://i.ibb.co/fulgho-bag.png" alt="FULGHO Bag" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Showcase Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="position-relative brand-showcase">
+            <img src="https://i.ibb.co/brand-image.png" alt="Brand Image" class="img-fluid rounded">
+            <div class="position-absolute top-50 start-50 translate-middle text-center">
+              <h2 class="text-white fw-bold mb-4">Discover Our Brand Story</h2>
+              <p class="text-white mb-4">Experience the essence of luxury and style with our latest collection</p>
+              <a href="#" class="btn btn-outline-light">Learn More</a>
             </div>
           </div>
         </div>
-      </nav>
-
-<!-- 1 -->
-      <section class="py-5">
-        <div class="container">
-          <div class="row gx-4">
-            <div class="col-lg-8 position-relative bg-light rounded p-5 d-flex align-items-center" style="min-height: 450px;">
-              <div class="z-2">
-                <p class="text-uppercase small mb-2">Now Collection</p>
-                <h2 class="display-5 fw-bold mb-3">FE SUMMER 25</h2>
-                <p class="text-muted mb-4">The jacket is made from high quality jean material, ensuring durability and comfort in all situations.</p>
-                <a href="#" class="btn btn-dark">Discover Now</a>
+        <div class="col-md-6">
+          <div class="ps-md-4">
+            <p class="text-uppercase small text-muted">Our Heritage</p>
+            <h2 class="fw-bold mb-3">Crafting Excellence Since 1995</h2>
+            <p class="text-muted mb-4">For over two decades, we've been dedicated to creating timeless pieces that blend
+              contemporary design with traditional craftsmanship. Our commitment to quality and innovation has made us a
+              leading name in fashion.</p>
+            <div class="d-flex gap-4 mb-4">
+              <div class="text-center">
+                <h3 class="fw-bold mb-0">25+</h3>
+                <span class="text-muted small">Years Experience</span>
               </div>
-              <img src="https://i.ibb.co/Gt2TTYY/model-pair.png" class="position-absolute end-0 bottom-0 h-100 d-none d-lg-block" alt="Models">
-            </div>
-      
-            <div class="col-lg-4 d-flex flex-column gap-4 mt-4 mt-lg-0">
-              <div class="bg-white rounded p-3 text-center">
-                <p class="text-uppercase small text-muted">New Collection</p>
-                <h5 class="fw-bold mb-3">Sunglasses</h5>
-                <img src="https://i.ibb.co/6sWPFZg/sunglasses.png" alt="Sunglasses" class="img-fluid">
+              <div class="text-center">
+                <h3 class="fw-bold mb-0">1000+</h3>
+                <span class="text-muted small">Happy Customers</span>
               </div>
-      
-              <div class="bg-light rounded p-3 text-center">
-                <p class="text-uppercase small text-danger mb-1">Sale Off</p>
-                <h5 class="fw-bold mb-1 text-danger">20%</h5>
-                <p class="mb-2">For Watches</p>
-                <img src="https://i.ibb.co/q7Xcq3W/watches.png" alt="Watches" class="img-fluid">
+              <div class="text-center">
+                <h3 class="fw-bold mb-0">50+</h3>
+                <span class="text-muted small">Global Stores</span>
               </div>
             </div>
+            <a href="#" class="btn btn-dark">Explore Our Story</a>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-<!-- 2 -->
-      <section class="py-5">
-        <div class="container">
-          <div class="text-center mb-4">
-            <p class="text-muted small">OUR PRODUCTS</p>
-            <h2 class="fw-bold">FEATURED PRODUCTS</h2>
+  <!-- Showcase Section -->
+  <section class="showcase-section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <div class="showcase-item">
+            <p class="text-uppercase small text-muted">Men's</p>
+            <h2 class="fw-bold mb-3">The best look anytime anywhere</h2>
+            <img src="path-to-mens-image.jpg" alt="Men's Fashion" class="img-fluid">
+            <a href="#" class="btn btn-dark mt-3">Shop Now</a>
           </div>
-      
-          <ul class="nav nav-pills justify-content-center mb-4 gap-3" id="productTabs">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">BESTSELLER <sup>20</sup></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">TOP ARRIVALS <sup>32</sup></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CHOOSE BY STORE <sup>24</sup></a>
-            </li>
+        </div>
+        <div class="col-md-6 text-center">
+          <div class="showcase-item">
+            <p class="text-uppercase small text-muted">Women's</p>
+            <h2 class="fw-bold mb-3">Complement your flawless beauty</h2>
+            <img src="path-to-womens-image.jpg" alt="Women's Fashion" class="img-fluid">
+            <a href="#" class="btn btn-dark mt-3">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section py-5">
+    <div class="container text-center">
+      <p class="text-uppercase small text-muted">Our Client Reviews</p>
+      <h2 class="fw-bold mb-4">Testimonials</h2>
+      <div class="testimonial">
+        <p class="mb-4">I can't express enough how much I adore VOLD Fashion. From their exquisite clothing designs to
+          their outstanding customer service, VOLD has truly become my go-to brand for all things fashion.</p>
+        <img src="path-to-client-image.jpg" alt="Client Image" class="rounded-circle mb-3" width="80">
+        <h5 class="fw-bold">Enzo Nicholas</h5>
+        <p class="text-muted">Fashion Designer</p>
+      </div>
+      <div class="d-flex justify-content-center mt-4">
+        <button class="btn btn-outline-dark me-2">&#8249;</button>
+        <button class="btn btn-outline-dark">&#8250;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner Spotlight Section -->
+  <section class="partner-spotlight py-5">
+    <div class="container text-center">
+      <p class="text-uppercase small text-muted">Our Partner</p>
+      <h2 class="fw-bold mb-4">Partner Spotlight</h2>
+      <p class="text-muted mb-4">Explore our trusted stores.</p>
+      <div class="partners d-flex justify-content-center flex-wrap">
+        <span class="mx-3">Farfetch</span>
+        <span class="mx-3">FWRD</span>
+        <span class="mx-3">Revolve</span>
+        <span class="mx-3">Nordstrom</span>
+        <span class="mx-3">Wanan</span>
+        <span class="mx-3">Italist</span>
+        <span class="mx-3">Lafayette 148</span>
+        <span class="mx-3">Matches</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="blog-section py-5">
+    <div class="container text-center">
+      <p class="text-uppercase small text-muted">The Fashion Blogger</p>
+      <h2 class="fw-bold mb-4">From the Blog</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="blog-post">
+            <img src="path-to-image1.jpg" alt="Blog Image 1" class="img-fluid mb-3">
+            <p class="text-muted small">June 25, 2025 | Fashion</p>
+            <h5 class="fw-bold">The Golden Age of French Fashion: Unraveling Dior's New Look</h5>
+            <p class="text-muted">De Beers sold just $80 million of rough diamonds at the end of October, compared with
+              $454 million.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="blog-post">
+            <img src="path-to-image2.jpg" alt="Blog Image 2" class="img-fluid mb-3">
+            <p class="text-muted small">June 21, 2025 | Models</p>
+            <h5 class="fw-bold">Aditi Rao Hydari wore the iconic Sabyasachi red co-ord set</h5>
+            <p class="text-muted">The exhibition will explore ideas of rebirth and renewal through nature, and spotlight
+              250 reworked.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="blog-post">
+            <img src="path-to-image3.jpg" alt="Blog Image 3" class="img-fluid mb-3">
+            <p class="text-muted small">June 08, 2025 | News</p>
+            <h5 class="fw-bold">Gap Surpasses Expectations in Early Win for New CEO Dickson</h5>
+            <p class="text-muted">The fashion calendar is moving full speed ahead, and the plethora of campaigns for the
+              spring.</p>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn btn-dark mt-4">View More</a>
+    </div>
+  </section>
+
+  <!-- Instagram Section -->
+  <section class="instagram-section py-5">
+    <div class="container text-center">
+      <p class="text-uppercase small text-muted">Social on Instagram</p>
+      <h2 class="fw-bold mb-4">Express Yourself</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="path-to-image1.jpg" alt="Instagram Image 1" class="img-fluid mb-3">
+        </div>
+        <div class="col-md-3">
+          <img src="path-to-image2.jpg" alt="Instagram Image 2" class="img-fluid mb-3">
+        </div>
+        <div class="col-md-3">
+          <img src="path-to-image3.jpg" alt="Instagram Image 3" class="img-fluid mb-3">
+        </div>
+        <div class="col-md-3">
+          <img src="path-to-image4.jpg" alt="Instagram Image 4" class="img-fluid mb-3">
+        </div>
+      </div>
+      <a href="#" class="btn btn-dark mt-4">Follow Us</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section py-5">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-3">
+          <i class="bi bi-truck"></i>
+          <h5 class="fw-bold">Free Shipping</h5>
+          <p class="text-muted">Free Shipping for orders over $200</p>
+        </div>
+        <div class="col-md-3">
+          <i class="bi bi-shield-check"></i>
+          <h5 class="fw-bold">Money Guarantee</h5>
+          <p class="text-muted">Within 30 days for an exchange.</p>
+        </div>
+        <div class="col-md-3">
+          <i class="bi bi-headset"></i>
+          <h5 class="fw-bold">Online Support</h5>
+          <p class="text-muted">24 hours a day, 7 days a week</p>
+        </div>
+        <div class="col-md-3">
+          <i class="bi bi-credit-card"></i>
+          <h5 class="fw-bold">Secure Payments</h5>
+          <p class="text-muted">Pay with Multiple Credit Cards</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>GET 20% OFF YOUR FIRST ORDER</h2>
+        <p>Sign up for promotions, tailored new arrivals, stock updates and more - straight to your direct</p>
+      </div>
+      <div class="newsletter-form">
+        <div class="form-header">
+          <h3>GET UPDATES BY</h3>
+        </div>
+        <form class="d-flex justify-content-center">
+          <div class="form-group flex-grow-1">
+            <input type="email" class="form-control" placeholder="Your phone or email address">
+          </div>
+          <button type="submit" class="btn btn-dark">SUBMIT</button>
+        </form>
+        <p class="form-text">By signing up, you consent to receiving marketing by email and/or SMS.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5 class="fw-bold">FIERCÉ</h5>
+          <p class="text-muted">Contact Info</p>
+          <p class="text-muted">Address: 1125 Broadway Street, No. 202 Santa Monica, New York</p>
+          <p class="text-muted">Hotline: 0707 061 251</p>
+          <p class="text-muted">Email: voidcontact@gmail.com</p>
+          <p class="text-muted">Open Time: 8:30 AM - 10:00 PM</p>
+        </div>
+        <div class="col-md-3">
+          <h5 class="fw-bold">We Are VOLD</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-muted">About us</a></li>
+            <li><a href="#" class="text-muted">Blog</a></li>
+            <li><a href="#" class="text-muted">Partner stores</a></li>
+            <li><a href="#" class="text-muted">Track your order</a></li>
+            <li><a href="#" class="text-muted">Store location</a></li>
           </ul>
-      
-          <div class="row g-4 justify-content-center">
-            <!-- Product Card -->
-            <div class="col-md-6 col-lg-3">
-              <div class="border rounded p-3 position-relative">
-                <span class="badge bg-danger position-absolute top-0 start-0 m-2">-8%</span>
-                <img src="https://i.ibb.co/6Y2cCGv/watch.png" class="img-fluid mb-3" alt="Watch">
-                <p class="text-muted small mb-1">DIOR</p>
-                <h6 class="fw-bold mb-2">Fanny watches</h6>
-                <div class="mb-2">
-                  <span class="text-muted text-decoration-line-through">$2865.00</span>
-                  <span class="fw-bold ms-2">$2115.00</span>
-                </div>
-                <div>
-                  <span class="d-inline-block bg-dark rounded-circle" style="width: 14px; height: 14px;"></span>
-                  <span class="d-inline-block bg-light border rounded-circle ms-1" style="width: 14px; height: 14px;"></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <div class="border rounded p-3 position-relative">
-                <span class="badge bg-danger position-absolute top-0 start-0 m-2">-8%</span>
-                <img src="https://i.ibb.co/6Y2cCGv/watch.png" class="img-fluid mb-3" alt="Watch">
-                <p class="text-muted small mb-1">DIOR</p>
-                <h6 class="fw-bold mb-2">Fanny watches</h6>
-                <div class="mb-2">
-                  <span class="text-muted text-decoration-line-through">$2865.00</span>
-                  <span class="fw-bold ms-2">$2115.00</span>
-                </div>
-                <div>
-                  <span class="d-inline-block bg-dark rounded-circle" style="width: 14px; height: 14px;"></span>
-                  <span class="d-inline-block bg-light border rounded-circle ms-1" style="width: 14px; height: 14px;"></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <div class="border rounded p-3 position-relative">
-                <span class="badge bg-danger position-absolute top-0 start-0 m-2">-8%</span>
-                <img src="https://i.ibb.co/6Y2cCGv/watch.png" class="img-fluid mb-3" alt="Watch">
-                <p class="text-muted small mb-1">DIOR</p>
-                <h6 class="fw-bold mb-2">Fanny watches</h6>
-                <div class="mb-2">
-                  <span class="text-muted text-decoration-line-through">$2865.00</span>
-                  <span class="fw-bold ms-2">$2115.00</span>
-                </div>
-                <div>
-                  <span class="d-inline-block bg-dark rounded-circle" style="width: 14px; height: 14px;"></span>
-                  <span class="d-inline-block bg-light border rounded-circle ms-1" style="width: 14px; height: 14px;"></span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <div class="border rounded p-3 position-relative">
-                <span class="badge bg-danger position-absolute top-0 start-0 m-2">-8%</span>
-                <img src="https://i.ibb.co/6Y2cCGv/watch.png" class="img-fluid mb-3" alt="Watch">
-                <p class="text-muted small mb-1">DIOR</p>
-                <h6 class="fw-bold mb-2">Fanny watches</h6>
-                <div class="mb-2">
-                  <span class="text-muted text-decoration-line-through">$2865.00</span>
-                  <span class="fw-bold ms-2">$2115.00</span>
-                </div>
-                <div>
-                  <span class="d-inline-block bg-dark rounded-circle" style="width: 14px; height: 14px;"></span>
-                  <span class="d-inline-block bg-light border rounded-circle ms-1" style="width: 14px; height: 14px;"></span>
-                </div>
-              </div>
-            </div>
-
-    <footer>
-        <div class="container text-center">
-            <h4>Get 10% Off Your First Order</h4>
-            <form class="d-flex justify-content-center mt-3">
-                <input type="email" class="form-control w-25" placeholder="Enter your email">
-                <button type="submit" class="btn btn-dark ms-2">Subscribe</button>
-            </form>
-            <p class="mt-4">&copy; 2025 Fierce Fashion. All rights reserved.</p>
         </div>
-    </footer>
+        <div class="col-md-3">
+          <h5 class="fw-bold">Customer Service</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-muted">Contact us</a></li>
+            <li><a href="#" class="text-muted">How to shop</a></li>
+            <li><a href="#" class="text-muted">Order and shipping</a></li>
+            <li><a href="#" class="text-muted">Returns</a></li>
+            <li><a href="#" class="text-muted">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="fw-bold">Categories</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-muted">Collections</a></li>
+            <li><a href="#" class="text-muted">Men's</a></li>
+            <li><a href="#" class="text-muted">Women's</a></li>
+            <li><a href="#" class="text-muted">Accessories</a></li>
+            <li><a href="#" class="text-muted">Fragrances</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p class="text-muted">&copy; 2023 Moderno Theme. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
