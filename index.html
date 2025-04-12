@@ -40,13 +40,21 @@
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-white py-3 sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">FIERCÉ</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+    <div class="container align-items-center">
+      <a class="navbar-brand fw-bold" href="#">FIERCÉ</a>
+
+      <div class="d-lg-none order-2 ms-auto">
+        <a href="#" class="btn btn-dark position-relative text-nowrap">
+          <i class="bi bi-bag"></i>
+          <span class="ms-2">Cart (16)</span>
+        </a>
+      </div>
+
+      <button class="navbar-toggler order-3 ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="mainNavbar">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+      <div class="collapse show d-lg-none navbar-collapse order-lg-2 mt-3 mt-lg-0" id="mainNavbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto d-none d-lg-flex">
           <li class="nav-item dropdown has-megamenu">
             <a class="nav-link active" href="#" data-bs-toggle="dropdown">HOME</a>
             <div class="dropdown-menu megamenu">
@@ -183,16 +191,17 @@
           <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
           <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
         </ul>
-        <div class="d-flex align-items-center gap-3">
+
+      <!-- <div class="d-flex align-items-center justify-content-center gap-3 w-100 d-lg-none mt-3">
           <a href="#" class="text-dark"><i class="bi bi-search"></i></a>
           <a href="#" class="text-dark"><i class="bi bi-person"></i></a>
           <a href="#" class="text-dark"><i class="bi bi-heart"></i></a>
           <a href="#" class="btn btn-dark position-relative text-nowrap">
             <i class="bi bi-bag"></i>
-            <span class="ms-2 ">Cart (16)</span>
+            <span class="ms-2">Cart (16)</span>
           </a>
         </div>
-      </div>
+      </div> -->
     </div>
   </nav>
 

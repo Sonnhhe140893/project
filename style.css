@@ -1065,10 +1065,48 @@ body {
    Responsive Styles
    ========================================================================== */
 @media (max-width: 991.98px) {
+
+
+
   .navbar-nav {
+    display: block;
     text-align: center;
   }
-  
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+
+  .navbar .d-flex.d-lg-none {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navbar .d-flex.d-lg-none a {
+    display: inline-block;
+  }
+
+  .navbar .collapse .d-flex {
+    margin-top: 10px;
+  }
+
+  /* Centering icons under the logo on tablet */
+  .navbar .navbar-collapse {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  .navbar .order-2 {
+    position: absolute;
+    right: 60px; 
+    top: 12px;
+  }
+
   .hero-section {
     text-align: center;
   }
@@ -1437,11 +1475,6 @@ body {
   z-index: 1000;
 }
 
-.megamenu .container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
 
 .megamenu .title {
   font-size: 0.85rem;
