@@ -47,7 +47,114 @@
       </button>
       <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
+          <li class="nav-item dropdown has-megamenu">
+            <a class="nav-link active" href="#" data-bs-toggle="dropdown">HOME</a>
+            <div class="dropdown-menu megamenu">
+              <div class="container">
+                <div class="row g-4">
+                  <!-- NEW ARRIVALS - col-3 -->
+                  <div class="col-lg-2">
+                    <h6 class="title">NEW ARRIVALS</h6>
+                    <ul class="list-unstyled">
+                      <li><a href="#">GIFT GUIDE</a></li>
+                      <li><a href="#">HOLIDAY PARTY</a></li>
+                      <li><a href="#">THE LEATHER LOOK</a></li>
+                      <li><a href="#">THE COZY SHOP</a></li>
+                      <li><a href="#">MORRIS & CO</a></li>
+                      <li><a href="#">WINTER SALE</a></li>
+                    </ul>
+                  </div>
+
+                  <!-- Main Categories - col-6 -->
+                  <div class="col-lg-8">
+                    <div class="row">
+                      <div class="col">
+                        <h6 class="title">CLOTHINGS</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Activewear</a></li>
+                          <li><a href="#">Beachwear</a></li>
+                          <li><a href="#">Coats</a></li>
+                          <li><a href="#">Dresses</a></li>
+                          <li><a href="#">Hosiery</a></li>
+                          <li><a href="#">Jackets</a></li>
+                          <li><a href="#">Jeans</a></li>
+                          <li><a href="#">Jumpsuits</a></li>
+                          <li><a href="#">Knitwear</a></li>
+                          <li><a href="#">Lingerie</a></li>
+                          <li><a href="#">Loungewear</a></li>
+                          <li><a href="#">Pants</a></li>
+                          <li><a href="#">Skirts</a></li>
+                          <li><a href="#">Shorts</a></li>
+                          <li><a href="#">Tops</a></li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <h6 class="title">SHOES</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Boots</a></li>
+                          <li><a href="#">Flats</a></li>
+                          <li><a href="#">Loafers</a></li>
+                          <li><a href="#">Platforms</a></li>
+                          <li><a href="#">Pumps</a></li>
+                          <li><a href="#">Sandals</a></li>
+                          <li><a href="#">Sneakers</a></li>
+                          <li><a href="#">Wedges</a></li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <h6 class="title">BAGS</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Backpacks</a></li>
+                          <li><a href="#">Belt Bags</a></li>
+                          <li><a href="#">Clutches</a></li>
+                          <li><a href="#">Crossbody Bags</a></li>
+                          <li><a href="#">Handbags</a></li>
+                          <li><a href="#">Satchels</a></li>
+                          <li><a href="#">Shoulder Bags</a></li>
+                          <li><a href="#">Travel Bags</a></li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <h6 class="title">ACCESSORIES</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Belt Accessories</a></li>
+                          <li><a href="#">Belts</a></li>
+                          <li><a href="#">Face Masks</a></li>
+                          <li><a href="#">Hair Accessories</a></li>
+                          <li><a href="#">Jewelry</a></li>
+                          <li><a href="#">Scarves</a></li>
+                          <li><a href="#">Sunglasses</a></li>
+                          <li><a href="#">Watches</a></li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <h6 class="title">TOPS DESIGNERS</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Gucci</a></li>
+                          <li><a href="#">Balenciaga</a></li>
+                          <li><a href="#">Isabel Marant</a></li>
+                          <li><a href="#">Tory Burch</a></li>
+                          <li><a href="#">Versace</a></li>
+                          <li><a href="#">Valentino</a></li>
+                          <li><a href="#">Dior</a></li>
+                          <li><a href="#">Alexander Wang</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- GIFT GUIDE with Image - col-3 -->
+                  <div class="col-lg-2">
+                    <h6 class="title justify-content-center">GIFT GUIDE</h6>
+                    <div class="menu-image justify-content-center">
+                      <img src="images/menuuuu img.png" alt="Gift Guide" class="img-fluid rounded">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">SHOP</a>
             <ul class="dropdown-menu">
@@ -80,9 +187,9 @@
           <a href="#" class="text-dark"><i class="bi bi-search"></i></a>
           <a href="#" class="text-dark"><i class="bi bi-person"></i></a>
           <a href="#" class="text-dark"><i class="bi bi-heart"></i></a>
-          <a href="#" class="btn btn-dark position-relative">
+          <a href="#" class="btn btn-dark position-relative text-nowrap">
             <i class="bi bi-bag"></i>
-            <span class="ms-2">Cart (16)</span>
+            <span class="ms-2 ">Cart (16)</span>
           </a>
         </div>
       </div>
@@ -449,24 +556,24 @@
           <img src="images/4 (1).png" alt="">
         </div>
         <!-- <div class="col-md-3">
-          <i class="bi bi-truck"></i>
+                    <i class="bi bi-truck"></i>
           <p class="fw-bold">Free Shipping</p>
-          <p class="text-muted">Free Shipping for orders over $200</p>
-        </div>
-        <div class="col-md-3">
-          <i class="bi bi-shield-check"></i>
+                    <p class="text-muted">Free Shipping for orders over $200</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="bi bi-shield-check"></i>
           <p class="fw-bold">Money Guarantee</p>
-          <p class="text-muted">Within 30 days for an exchange.</p>
-        </div>
-        <div class="col-md-3">
-          <i class="bi bi-headset"></i>
+                    <p class="text-muted">Within 30 days for an exchange.</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="bi bi-headset"></i>
           <p class="fw-bold">Online Support</p>
-          <p class="text-muted">24 hours a day, 7 days a week</p>
-        </div>
-        <div class="col-md-3">
-          <i class="bi bi-credit-card"></i>
+                    <p class="text-muted">24 hours a day, 7 days a week</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="bi bi-credit-card"></i>
           <p class="fw-bold">Secure Payments</p>
-          <p class="text-muted">Pay with Multiple Credit Cards</p>
+                    <p class="text-muted">Pay with Multiple Credit Cards</p>
         </div> -->
       </div>
     </div>
@@ -495,51 +602,111 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer-section py-5">
+  <footer class="footer-section py-5 " style="height: 597px;">
     <div class="row">
-      <div class="col-md-5 px-4">
-        <h5 class="fw-bold">FIERCÉ</h5>
-        <p class="text-muted">Contact Info</p>
-        <p class="text-muted">Address: 1125 Broadway Street, No. 202 Santa Monica, New York</p>
-        <p class="text-muted">Hotline: 0707 061 251</p>
-        <p class="text-muted">Email: voidcontact@gmail.com</p>
-        <p class="text-muted">Open Time: 8:30 AM - 10:00 PM</p>
+      <div class="col-md-12 px-4 mb-5">
+        <img src="images/FIERCÉ.png" alt="">
       </div>
-      <div class="row col-md-5">
+      <div class="col-md-4 px-4">
+        <h5 class="fw-bolder">CONTACT INFO</h5>
+
+        <div class="d-flex align-items-start">
+          <span class="fw-bold me-2" style="min-width: 80px;">Address :</span>
+          <div class="text-muted">
+            <div>1125 Broadway Street, No. 202 Santa Monica, New York</div>
+            <div>257 Broadway Street, No. 202 Santa Monica, New York</div>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-start mt-2">
+          <span class="fw-bold me-2" style="min-width: 80px;">Hotline :</span>
+          <span class="text-muted">0707 061 251</span>
+        </div>
+
+        <div class="d-flex align-items-start mt-2">
+          <span class="fw-bold me-2" style="min-width: 80px;">Email :</span>
+          <span class="text-muted">voldcontact@gmail.com</span>
+        </div>
+
+        <div class="d-flex align-items-start mt-2">
+          <span class="fw-bold me-2" style="min-width: 80px;">Open Time :</span>
+          <span class="text-muted">8:30 AM - 10:00 PM</span>
+        </div>
+      </div>
+      <div class="row col-md-6">
         <div class="col-md-4">
           <h5 class="fw-bold">We Are VOLD</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-muted">About us</a></li>
-            <li><a href="#" class="text-muted">Blog</a></li>
-            <li><a href="#" class="text-muted">Partner stores</a></li>
-            <li><a href="#" class="text-muted">Track your order</a></li>
-            <li><a href="#" class="text-muted">Store location</a></li>
+          <ul class="list-unstyled ">
+            <li class="mb-2"><a href="#" class="text-muted ">About us</a></li>
+            <li class="mb-2"><a href="#" class="text-muted ">Blog</a></li>
+            <li class="mb-2"><a href="#" class="text-muted ">Partner stores</a></li>
+            <li class="mb-2"><a href="#" class="text-muted ">Track your order</a></li>
+            <li class="mb-2"><a href="#" class="text-muted ">Store location</a></li>
           </ul>
         </div>
         <div class="col-md-4">
           <h5 class="fw-bold">Customer Service</h5>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-muted">Contact us</a></li>
-            <li><a href="#" class="text-muted">How to shop</a></li>
-            <li><a href="#" class="text-muted">Order and shipping</a></li>
-            <li><a href="#" class="text-muted">Returns</a></li>
-            <li><a href="#" class="text-muted">FAQs</a></li>
+            <li class="mb-2"><a href="#" class="text-muted ">Contact us</a></li>
+            <li class="mb-2"><a href="#" class="text-muted ">How to shop</a></li>
+            <li class="mb-2"><a href="#" class="text-muted ">Order and shipping</a></li>
+            <li class="mb-2"><a href="#" class="text-muted ">Returns</a></li>
+            <li class="mb-2"><a href="#" class="text-muted ">FAQs</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Accessibility</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Request Invoice</a></li>
           </ul>
         </div>
         <div class="col-md-4">
           <h5 class="fw-bold">Categories</h5>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-muted">Collections</a></li>
-            <li><a href="#" class="text-muted">Men's</a></li>
-            <li><a href="#" class="text-muted">Women's</a></li>
-            <li><a href="#" class="text-muted">Accessories</a></li>
-            <li><a href="#" class="text-muted">Fragrances</a></li>
+            <li class="mb-2"><a href="#" class="text-muted ">Collections</a></li>
+            <li class="mb-2"><a href="#" class="text-muted ">Men's</a></li>
+            <li class="mb-2"><a href="#" class="text-muted ">Women's</a></li>
+            <li class="mb-2"><a href="#" class="text-muted ">Accessories</a></li>
+            <li class="mb-2"><a href="#" class="text-muted ">Fragrances</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Tops</a></li>
           </ul>
+        </div>
+      </div>
+
+      <div class="col-md-2 px-4">
+        <div class="mb-4">
+          <h5 class="fw-bold">Social Network</h5>
+          <div class="d-flex flex-wrap gap-2">
+            <img src="images/Vector.png" alt="" style="width: 31px; height: 31px;">
+            <img src="images/tiktok.png" alt="" style="width: 31px; height: 31px;">
+            <img src="images/snapchat.png" alt="" style="width: 31px; height: 31px;">
+            <img src="images/twitter (2).png" alt="" style="width: 31px; height: 31px;">
+            <img src="images/instagram (1).png" alt="" style="width: 31px; height: 31px;">
+          </div>
+        </div>
+
+        <div>
+          <h5 class="fw-bold">We Accept</h5>
+          <div class="row row-cols-3 g-2 mt-2" style="max-width: 200px;">
+            <div class="col text-center">
+              <img src="images/1 (2).png" alt="" style="width: 38px; height: 24px;">
+            </div>
+            <div class="col text-center">
+              <img src="images/2 (2).png" alt="" style="width: 38px; height: 24px;">
+            </div>
+            <div class="col text-center">
+              <img src="images/3 (2).png" alt="" style="width: 38px; height: 24px;">
+            </div>
+            <div class="col text-center">
+              <img src="images/4 (2).png" alt="" style="width: 38px; height: 24px;">
+            </div>
+            <div class="col text-center">
+              <img src="images/5 (1).png" alt="" style="width: 38px; height: 24px;">
+            </div>
+            <div class="col text-center">
+              <img src="images/6 (1).png" alt="" style="width: 38px; height: 24px;">
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="text-center mt-4">
-      <p class="text-muted">&copy; 2023 Moderno Theme. All Rights Reserved.</p>
     </div>
   </footer>
 
